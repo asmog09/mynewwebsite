@@ -22,9 +22,9 @@ export default function Home() {
         />
         {/* Overlay for readability */}
         <div className="absolute inset-0 bg-black/60 z-10" aria-hidden="true" />
-        {/* Decorative logo bottom left */}
-        <div className="absolute bottom-6 left-6 z-30">
-          <Image src="https://static.wixstatic.com/media/64f7b5_e8126bed16284e12a4e5d1f0fd68f45f~mv2.png/v1/fill/w_408,h_408,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/flying-ninja-silhouette_168578-178_edite.png" alt="Swiftline Brand Icon" width={48} height={48} className="md:w-16 md:h-16 w-12 h-12 opacity-80" />
+        {/* Decorative logo bottom left - viewport-sized so it stays big on phone */}
+        <div className="absolute bottom-6 left-6 z-30" style={{ width: "min(260px, 58vmin)", height: "min(260px, 58vmin)" }}>
+          <Image src="https://static.wixstatic.com/media/64f7b5_e8126bed16284e12a4e5d1f0fd68f45f~mv2.png/v1/fill/w_408,h_408,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/flying-ninja-silhouette_168578-178_edite.png" alt="Swiftline Brand Icon" width={400} height={400} className="w-full h-full opacity-90 object-contain brightness-0" />
         </div>
         {/* Large Swiftline logo image in hero, with drop shadow and tagline */}
         <div className="absolute inset-0 flex flex-col items-center justify-center z-20 pointer-events-none animate-fade-slide-up" style={{animationDelay: '0ms'}}>
@@ -41,19 +41,19 @@ export default function Home() {
         </div>
         {/* Bottom: Four horizontal action buttons styled as transparent boxes with SVG icons */}
         <div className="absolute z-30 w-full left-0 bottom-0 flex flex-col md:flex-row divide-x md:divide-x divide-y-0 md:divide-y-0 divide-white/40 animate-fade-slide-up homepage-nav" style={{animationDelay: '300ms'}}>
-          <a href="/quote" className="flex-1 flex items-center justify-center gap-3 py-6 md:py-8 border-2 border-[#1565c0] text-[#1565c0] font-extrabold text-xl md:text-2xl transition bg-transparent hover:bg-white focus:bg-white" aria-label="Get A Quote">
+          <a href="/quote" className="flex-1 flex items-center justify-center gap-3 py-8 md:py-12 border-2 border-white/30 text-white font-extrabold text-xl md:text-2xl transition bg-transparent hover:bg-white/20 focus:bg-white/20" aria-label="Get A Quote">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h8m-4-4v8m9 4H7a2 2 0 01-2-2V7a2 2 0 012-2h10a2 2 0 012 2v13z" /></svg>
             Get A Quote
           </a>
-          <a href="/book-freight" className="flex-1 flex items-center justify-center gap-3 py-6 md:py-8 border-2 border-[#1565c0] text-[#1565c0] font-extrabold text-xl md:text-2xl transition bg-transparent hover:bg-white focus:bg-white" aria-label="Book Freight">
+          <a href="/book-freight" className="flex-1 flex items-center justify-center gap-3 py-8 md:py-12 border-2 border-white/30 text-white font-extrabold text-xl md:text-2xl transition bg-transparent hover:bg-white/20 focus:bg-white/20" aria-label="Book Freight">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 17v-6a2 2 0 012-2h2V7a2 2 0 012-2h4a2 2 0 012 2v2h2a2 2 0 012 2v6M5 21h14a2 2 0 002-2v-2a2 2 0 00-2-2H5a2 2 0 00-2 2v2a2 2 0 002 2z" /></svg>
             Book Freight
           </a>
-          <a href="/work-with-swiftline" className="flex-1 flex items-center justify-center gap-3 py-6 md:py-8 border-2 border-[#1565c0] text-[#1565c0] font-extrabold text-xl md:text-2xl transition bg-transparent hover:bg-white focus:bg-white" aria-label="Work With Swiftline">
+          <a href="/work-with-swiftline" className="flex-1 flex items-center justify-center gap-3 py-8 md:py-12 border-2 border-white/30 text-white font-extrabold text-xl md:text-2xl transition bg-transparent hover:bg-white/20 focus:bg-white/20" aria-label="Work With Swiftline">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
             Work With Swiftline
           </a>
-          <a href="/services" className="flex-1 flex items-center justify-center gap-3 py-6 md:py-8 border-2 border-[#1565c0] text-[#1565c0] font-extrabold text-xl md:text-2xl transition bg-transparent hover:bg-white focus:bg-white" aria-label="Services">
+          <a href="/services" className="flex-1 flex items-center justify-center gap-3 py-8 md:py-12 border-2 border-white/30 text-white font-extrabold text-xl md:text-2xl transition bg-transparent hover:bg-white/20 focus:bg-white/20" aria-label="Services">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7h18M3 12h18M3 17h18" /></svg>
             Services
           </a>
