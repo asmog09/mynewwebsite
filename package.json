@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "npm run build && git add -A && git diff --staged --quiet || (git commit -m \"deploy: build\" && git push)"
   },
   "dependencies": {
     "react": "^19.0.0",
