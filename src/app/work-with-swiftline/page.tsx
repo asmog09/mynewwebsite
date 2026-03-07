@@ -7,8 +7,8 @@ export default function WorkWithSwiftlinePage() {
       {/* Hero Section */}
       <section className="relative w-full h-[45vh] md:h-[55vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="https://www.sperton.com/wp-content/uploads/2023/11/blog_best_tips_tricks_logistics.jpg"
-          alt="Your Road Ahead Hero"
+          src="/work-with-us-hero.png"
+          alt="Swiftline truck at loading bay – modern fleet, professional logistics"
           fill
           className="object-cover object-center z-0"
           priority

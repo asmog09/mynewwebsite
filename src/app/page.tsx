@@ -1,11 +1,5 @@
 "use client";
 import Image from "next/image";
-import { Oswald } from "next/font/google";
-
-const oswald = Oswald({
-  subsets: ["latin"],
-  weight: ["700"],
-});
 
 export default function Home() {
   return (
@@ -60,7 +54,7 @@ export default function Home() {
         </div>
       </section>
       {/* Swiftline Quote Section styled for blue theme */}
-      <section className="relative z-40 py-16 px-4 flex flex-col justify-center items-center animate-fade-slide-up" style={{animationDelay: '600ms'}}>
+      <section className="relative z-40 w-full py-16 px-4 bg-white text-[#1565c0] flex flex-col justify-center items-center animate-fade-slide-up" style={{animationDelay: '600ms'}}>
         <h2 className="text-4xl md:text-5xl font-extrabold text-[#1565c0] text-center mb-4 uppercase tracking-wider italic" style={{letterSpacing: '0.04em'}}>
           A SWIFTLINE TRADITION
         </h2>
@@ -74,17 +68,17 @@ export default function Home() {
           <div className="relative w-full overflow-hidden">
             <div className="flex animate-slide gap-8">
               <div className="min-w-full bg-[#111111] rounded-xl p-8 shadow text-center text-white">
-                <p className="text-xl italic mb-4">"The support is fantastic, it's personal. It comes from the top down."</p>
+                <p className="text-xl italic mb-4">&ldquo;The support is fantastic, it&apos;s personal. It comes from the top down.&rdquo;</p>
                 <span className="font-bold">Simon Parker</span>
                 <span className="block text-sm opacity-70">Warehouse Administrator</span>
               </div>
               <div className="min-w-full bg-[#111111] rounded-xl p-8 shadow text-center text-white">
-                <p className="text-xl italic mb-4">"It's a great place to work, and I know that some people just say that but I mean it."</p>
+                <p className="text-xl italic mb-4">&ldquo;It&apos;s a great place to work, and I know that some people just say that but I mean it.&rdquo;</p>
                 <span className="font-bold">Carl Hamilton</span>
                 <span className="block text-sm opacity-70">National Workshop Manager</span>
               </div>
               <div className="min-w-full bg-[#111111] rounded-xl p-8 shadow text-center text-white">
-                <p className="text-xl italic mb-4">"I still enjoy my job, I enjoy going away, I enjoy coming back. It's just a really comfortable place to work."</p>
+                <p className="text-xl italic mb-4">&ldquo;I still enjoy my job, I enjoy going away, I enjoy coming back. It&apos;s just a really comfortable place to work.&rdquo;</p>
                 <span className="font-bold">Peter Dawson-Ryan</span>
                 <span className="block text-sm opacity-70">Line Haul Driver</span>
               </div>

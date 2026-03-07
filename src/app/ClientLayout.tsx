@@ -11,21 +11,14 @@ export default function ClientLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [openSub, setOpenSub] = useState<string | null>(null);
-  const [showLevy, setShowLevy] = useState(false);
   const [showWidgets, setShowWidgets] = useState(false);
   const pathname = usePathname();
-  const handleSubToggle = (key: string) => {
-    setOpenSub(openSub === key ? null : key);
-  };
 
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > window.innerHeight * 0.5) {
-        setShowLevy(true);
         setShowWidgets(true);
       } else {
-        setShowLevy(false);
         setShowWidgets(false);
       }
     };
@@ -47,9 +40,9 @@ export default function ClientLayout({
           <span className="block w-8 h-1 bg-[#1565c0] rounded transition"></span>
         </button>
         <div className="flex-1 flex flex-col justify-center items-center w-full">
-          <a href="/" className="pointer-events-auto flex items-center justify-center" style={{ cursor: "pointer" }} aria-label="Home">
+          <Link href="/" className="pointer-events-auto flex items-center justify-center" style={{ cursor: "pointer" }} aria-label="Home">
             <Image src={NINJA_LOGO} alt="Home Logo" width={280} height={280} className="w-[100px] h-[100px] min-[768px]:w-28 min-[768px]:h-28 transition-transform duration-300 hover:scale-110 object-contain brightness-0" />
-          </a>
+          </Link>
         </div>
       </div>
       {pathname === "/" && (

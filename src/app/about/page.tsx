@@ -34,14 +34,23 @@ export default function AboutPage() {
         {/* Main Content */}
         <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
           <div className="space-y-6">
-            <p className="text-xl font-bold text-gray-800">
-              WE&apos;RE A &apos;LOOK YOU STRAIGHT IN THE EYE AND GIVE YOU A FIRM HANDSHAKE&apos; KIND OF BUSINESS.
+            <p className="text-gray-700">
+              Since its inception in 2023, SwiftLine has been driven by a clear purpose: to introduce a new standard of precision, professionalism, and modern thinking to Australia&apos;s transport industry.
             </p>
             <p className="text-gray-700">
-              A contemporary logistics company built on traditional family values. We treat your business as if it is our own and we have been doing it that way since 1965. While our heritage and reputation are things we value greatly, we're firmly focussed on the road ahead.
+              Founded by brothers Kalaab Tikue and Aron Tikue, the company began with just one rigid truck and a strong belief that reliability, discipline, and hard work could build something greater.
             </p>
             <p className="text-gray-700">
-              We take great pride in every aspect of our operation from maintaining our industry-leading equipment and impeccably presented fleet, to our longstanding customer relationships.
+              What started as a single vehicle on the road has grown into a rapidly expanding fleet, supported by a modern approach to operations and a growing network of trusted clients.
+            </p>
+            <p className="text-gray-700">
+              Although SwiftLine is a young company, it operates with the mindset of an established industry leader, with every kilometre reflecting its commitment to precision, accountability, and uncompromising service.
+            </p>
+            <p className="text-xl font-bold text-[#1565c0]">
+              SwiftLine isn&apos;t simply part of the industry.
+            </p>
+            <p className="text-xl font-bold text-[#1565c0]">
+              It&apos;s helping shape what comes next.
             </p>
           </div>
           <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
@@ -51,31 +60,6 @@ export default function AboutPage() {
               fill
               className="object-cover"
             />
-          </div>
-        </div>
-
-        {/* Additional Content Sections */}
-        <div className="space-y-16">
-          <div className="bg-gray-50 p-8 rounded-xl">
-            <h3 className="text-2xl font-bold text-[#1565c0] mb-4">KEEPING IT CLEAN, GREEN AND SAFE</h3>
-            <p className="text-gray-700 mb-4">
-              A rock-solid commitment to training, regular audits and up-to-the-minute certification and accreditation, means we once again not only meet, but exceed security, food safety and environmental benchmarks.
-            </p>
-            <p className="text-gray-700">
-              Our customers enjoy the peace of mind knowing our security standards are second to none. Around the clock security guard patrols and video surveillance coupled with access checks, personnel recording, and an electronic keying system, means your precious cargo is fully protected. Always.
-            </p>
-          </div>
-
-          <div className="bg-gray-50 p-8 rounded-xl">
-            <h3 className="text-2xl font-bold text-[#1565c0] mb-4">MISSION, VISION, VALUES</h3>
-            <p className="text-gray-700 mb-4">
-              Our fleet of trucks and vans offer state of the art temperature monitoring, that coupled with our highly trained and skilled drivers, we offer:
-            </p>
-            <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>On time delivery/pickup and distribution</li>
-              <li>Temperature sensitive monitoring</li>
-              <li>Freezer, chilled, and dry transportation</li>
-            </ul>
           </div>
         </div>
 
